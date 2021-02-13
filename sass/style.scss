@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fraunces', serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+$color-crema: #EEAD33;
+$color-blanco: #fff;
+$color-fondo-navbar: #212121;
+
+@import "components/main-header";
+@import "components/banner";
+@import "components/main-welcome";
+@import "components/container-design";
+
+
+
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Roboto', sans-serif;
+*/

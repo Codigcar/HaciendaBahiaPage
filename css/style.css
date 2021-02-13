@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  /*display: none;*/
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #212121;
+  width: 100%;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.menu__item {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.menu__link::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #EEAD33;
+  border-top: 2px solid #EEAD33;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+.menu__link::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-left: 2px solid #EEAD33;
+  border-bottom: 2px solid #EEAD33;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.menu__link span::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-left: 2px solid #EEAD33;
+  border-top: 2px solid #EEAD33;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.menu__link span::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-bottom: 2px solid #EEAD33;
+  border-right: 2px solid #EEAD33;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.menu__link span {
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+.menu__link--select::before,
+.menu__link--select::after,
+.menu__link--select span::before,
+.menu__link--select span::after {
+  opacity: 1;
+}
+
+.menu__item:hover .menu__link:before,
+.menu__item:hover .menu__link:after,
+.menu__item:hover .menu__link span:before,
+.menu__item:hover .menu__link span:after {
+  opacity: 1;
+}
+
+.icon-menu {
+  color: #EEAD33;
+  font-size: 1.5em;
+  display: block;
+  border: 1px solid #fff;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+
+.main-header {
+  padding: 0 15px;
+}
+
+.color-span {
+  color: #EEAD33;
+}
+
+.main-title {
+  color: #fff;
+}
+
+.nav-social {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-social__item {
+  width: 35px;
+  height: 35px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.nav-social__item:first-child {
+  background: #3b5998;
+}
+
+.nav-social__item:nth-child(2) {
+  background: #1da1f2;
+}
+
+.nav-social__item:nth-child(3) {
+  background: #ea4c89;
+}
+
+.nav-social i {
+  color: white;
+}
+
+.banner {
+  background: url(../../img/img1.jpg);
+  min-height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -999;
+}
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner__content {
+  width: 90%;
+  padding: 15px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.main {
+  padding: 15px;
+  margin-top: 350px;
+}
+
+.welcome {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.wecolme__title {
+  position: relative;
+}
+.wecolme__title::before {
+  content: "";
+  width: 30%;
+  position: absolute;
+  top: -20px;
+  left: 35%;
+  height: 3px;
+  background: #EEAD33;
+}
+
+.welcome__txt {
+  font-size: 1.3em;
+}
+
+.welcome__btn {
+  display: block;
+  border: 2px solid #EEAD33;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+  color: #EEAD33;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+.welcome__btn:hover {
+  background: #EEAD33;
+  color: #fff;
+}
+
+.container-design {
+  margin: 20px 0;
+}
+
+.design__item {
+  position: relative;
+}
+.design__item::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.design__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.8em;
+  width: 100%;
+  text-align: center;
+}
+.design__title::before {
+  content: "";
+  position: absolute;
+  background: #EEAD33;
+  height: 3px;
+  width: 30%;
+  top: -30px;
+  left: 35%;
+}
+.design__title::after {
+  content: "";
+  position: absolute;
+  background: #EEAD33;
+  height: 3px;
+  width: 30%;
+  bottom: -35px;
+  left: 35%;
+}
+
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/*# sourceMappingURL=style.css.map */

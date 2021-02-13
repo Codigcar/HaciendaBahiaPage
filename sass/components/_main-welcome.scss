@@ -1,0 +1,45 @@
+.main {
+    padding: 15px;
+    margin-top: 350px;
+}
+
+.welcome {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.wecolme__title {
+    position: relative;
+    &::before {
+        content: "";
+        width: 30%;
+        position: absolute;
+        top: -20px;
+        left: 35%;
+        height: 3px;
+        background: $color-crema;
+    }
+}
+
+.welcome__txt {
+    font-size: 1.3em;
+}
+
+.welcome__btn {
+    display: block;
+    border: 2px solid $color-crema;
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    color: $color-crema;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: all .5s;
+    &:hover{
+        background: $color-crema;
+        color: $color-blanco;
+    }
+}
+

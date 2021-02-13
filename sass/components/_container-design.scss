@@ -1,0 +1,44 @@
+.container-design {
+    margin: 20px 0;
+}
+.design__item {
+    position: relative;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.design__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-blanco;
+    font-size: 1.8em;
+    width: 100%;
+    text-align: center;
+    &::before{
+        content: "";
+        position: absolute;
+        background: $color-crema;
+        height: 3px;
+        width: 30%;
+        top: -30px;
+        left:35%;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        background: $color-crema;
+        height: 3px;
+        width: 30%;
+        bottom: -35px;
+        left:35%;
+    }
+}
