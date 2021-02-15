@@ -28,17 +28,19 @@
         position: absolute;
         background: $color-crema;
         height: 3px;
-        width: 30%;
         top: -30px;
-        left:35%;
+        width: 200px;
+        transform: translateX(-50%);
+        left:50%;
     }
     &::after{
         content: "";
         position: absolute;
         background: $color-crema;
         height: 3px;
-        width: 30%;
+        width: 200px;
         bottom: -35px;
-        left:35%;
+        transform: translateX(-50%);
+        left:50%;
     }
 }

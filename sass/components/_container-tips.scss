@@ -1,0 +1,36 @@
+.box__icon {
+    width: 100px;
+    height: 100px;
+    border: 2px solid $color-plomo;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: $color-crema;
+    
+    &:hover {
+        color: #000;
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.box__content {
+    width: 70%;
+}
+
+.box__title {
+    color: $color-crema;
+}
+
+.box__txt {
+    color: $color-plomo;
+}
+

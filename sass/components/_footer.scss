@@ -1,0 +1,89 @@
+.main-footer {
+    background: #282828;
+    color: $color-blanco;
+    display: flex;
+    flex-wrap: wrap;
+    color: $color-plomo;
+}
+
+.footer-column {
+    width: 49%;
+    padding: 10px;
+        padding: 20px;
+
+}
+
+.footer__author {
+    display: block;
+    text-align: right;
+    color: $color-crema;
+}
+
+.fa-twitter {
+    color: #3bbef5;
+    margin-right: 5px;
+}
+
+.footer__link {
+    color: $color-crema;
+}
+
+.footer__date {
+    font-size: .8em;
+    border-bottom: 1px solid #888;
+}
+
+.footer__title {
+    font-size: 1.8em;
+    color: $color-blanco;
+}
+
+.social__link {
+    display: block;
+    color: $color-plomo;
+    text-decoration: none;
+}
+
+.social-icon {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.social-icon i {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: $color-blanco;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.social-icon .fa-facebook-f {
+    background: $fondo-face;
+}
+
+.social-icon .fa-twitter {
+    background: $fondo-twitter;
+}
+.social-icon.fa-dribbble {
+    background: $fondo-dribbble;
+}
+.social-icon .fa-pinterest {
+    background: $fondo-pinterest;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    color: $color-blanco;
+}
+.contact-icon .fas {
+    margin-right: 10px;
+}
+
+.copy {
+    color: $color-blanco;
+    background: #211e1e;
+    padding: 20px;
+}

@@ -1,0 +1,108 @@
+.menu {
+    /*display: none;*/
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: $color-fondo-navbar;
+    width: 100%;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.menu__item {
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+}
+
+.menu__link {
+    color: $color-blanco;
+    text-decoration: none;
+    position: relative;
+    display: block;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-right: 2px solid $color-crema;
+        border-top: 2px solid $color-crema;
+        top: 0;
+        right: 0;
+        opacity: 0;
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-left: 2px solid $color-crema;
+        border-bottom: 2px solid $color-crema;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+
+    }
+
+    span::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-left: 2px solid $color-crema;
+        border-top: 2px solid $color-crema;
+        top: 0;
+        left: 0;
+        opacity: 0;
+
+    }
+
+    span::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-bottom: 2px solid $color-crema;
+        border-right: 2px solid $color-crema;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+
+    }
+
+    span {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+
+    }
+}
+
+.menu__link--select::before,
+.menu__link--select::after,
+.menu__link--select span::before,
+.menu__link--select span::after {
+    opacity: 1;
+}
+
+.menu__item:hover .menu__link:before,
+.menu__item:hover .menu__link:after,
+.menu__item:hover .menu__link span:before,
+.menu__item:hover .menu__link span:after {
+    opacity: 1;
+}
+
+/*--------------*/
+.mostrar {
+    opacity: 1;
+    visibility: visible;
+}

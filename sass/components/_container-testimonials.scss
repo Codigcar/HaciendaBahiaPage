@@ -1,0 +1,22 @@
+.container-testimonials {
+    margin: 60px 0;
+}
+
+.testimonials__img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+}
+.testimonials__txt {
+    text-align: center;
+    padding: 20px;
+}
+.testimonials__name {
+    text-align: center;
+    font-size: 1.4em;
+    color: $color-crema;
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -8,14 +8,17 @@
     padding: 20px 0;
 }
 
-.wecolme__title {
+.section__title {
     position: relative;
+    font-size: 2em;
+    text-align: center;
     &::before {
         content: "";
-        width: 30%;
+        width: 200px;
         position: absolute;
         top: -20px;
-        left: 35%;
+        left: 50%;
+        transform: translateX(-50%);
         height: 3px;
         background: $color-crema;
     }
