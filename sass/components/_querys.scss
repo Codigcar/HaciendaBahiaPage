@@ -1,0 +1,152 @@
+@media screen and (min-width: 768px) {
+    .menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        width: auto;
+        display: flex;
+        background: none;
+        font-size: .8em;
+    }
+
+    .menu__item {
+        width: auto;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    .banner {
+        min-height: 500px;
+
+        &::before {
+            min-height: 500px;
+        }
+    }
+
+    .main {
+        margin-top: 400px;
+    }
+
+    .box {
+        justify-content: center;
+    }
+
+    .box__icon {
+        margin-right: 30px;
+    }
+   
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .banner {
+        min-height: 600px;
+
+        &::before {
+            min-height: 600px;
+        }
+    }
+
+    .main {
+        margin-top: 500px;
+    }
+
+    .container-design,
+    .container-tips {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .design__item {
+        width: 50%;
+    }
+
+    .container-box {
+        width: 50%;
+    }
+
+    .container-tips {
+        height: 500px;
+    }
+
+    .container-tips .design__item {
+        height: 100%;
+    }
+
+    .container-tips .design__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .footer-column {
+        width: 24%;
+    }
+
+    .banner__title,
+    .banner__txt {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .menu {
+        font-size: 1em;
+    }
+
+    .main-title {
+        font-size: 2.5em;
+    }
+
+    .design__item {
+        height: 500px;
+    }
+
+    .container-tips .design__item {
+        height: 100%;
+    }
+
+    .container-design .design__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .footer-column {
+        width: 24%;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1200px;
+    }
+
+    .design__title {
+        font-size: 2.5em;
+    }
+
+    .design__item {
+        height: 500px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        width: 1400px;
+    }
+
+    .banner__title, .banner__txt {
+    font-size: 2em;
+  }
+   
+
+}

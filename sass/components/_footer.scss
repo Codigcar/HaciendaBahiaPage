@@ -1,15 +1,18 @@
 .main-footer {
     background: #282828;
-    color: $color-blanco;
+    color: $color-plomo;
+    
+    
+}
+.main-footer .container {
     display: flex;
     flex-wrap: wrap;
-    color: $color-plomo;
+    justify-content: space-between; 
 }
-
 .footer-column {
     width: 49%;
     padding: 10px;
-        padding: 20px;
+    padding: 20px;
 
 }
 
@@ -36,6 +39,7 @@
 .footer__title {
     font-size: 1.8em;
     color: $color-blanco;
+    text-transform: uppercase;
 }
 
 .social__link {
@@ -66,9 +70,11 @@
 .social-icon .fa-twitter {
     background: $fondo-twitter;
 }
+
 .social-icon.fa-dribbble {
     background: $fondo-dribbble;
 }
+
 .social-icon .fa-pinterest {
     background: $fondo-pinterest;
 }
@@ -78,6 +84,7 @@
     align-items: center;
     color: $color-blanco;
 }
+
 .contact-icon .fas {
     margin-right: 10px;
 }
@@ -85,5 +92,8 @@
 .copy {
     color: $color-blanco;
     background: #211e1e;
-    padding: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+
 }

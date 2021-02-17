@@ -122,6 +122,8 @@ body {
 .welcome {
   text-align: center;
   padding: 20px 0;
+  margin: auto;
+  max-width: 750px;
 }
 
 .section__title {
@@ -310,7 +312,8 @@ body {
 }
 
 .container-testimonials {
-  margin: 60px 0;
+  margin: 60px auto;
+  max-width: 650px;
 }
 
 .testimonials__img {
@@ -375,6 +378,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  max-width: 600px;
 }
 
 .form__mail {
@@ -401,10 +405,13 @@ body {
 
 .main-footer {
   background: #282828;
-  color: #fff;
+  color: #999;
+}
+
+.main-footer .container {
   display: flex;
   flex-wrap: wrap;
-  color: #999;
+  justify-content: space-between;
 }
 
 .footer-column {
@@ -436,6 +443,7 @@ body {
 .footer__title {
   font-size: 1.8em;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .social__link {
@@ -488,9 +496,152 @@ body {
 .copy {
   color: #fff;
   background: #211e1e;
-  padding: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    display: flex;
+    background: none;
+    font-size: 0.8em;
+  }
+
+  .menu__item {
+    width: auto;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .banner {
+    min-height: 500px;
+  }
+  .banner::before {
+    min-height: 500px;
+  }
+
+  .main {
+    margin-top: 400px;
+  }
+
+  .box {
+    justify-content: center;
+  }
+
+  .box__icon {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1000px;
+    margin: auto;
+  }
+
+  .banner {
+    min-height: 600px;
+  }
+  .banner::before {
+    min-height: 600px;
+  }
+
+  .main {
+    margin-top: 500px;
+  }
+
+  .container-design,
+.container-tips {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .design__item {
+    width: 50%;
+  }
+
+  .container-box {
+    width: 50%;
+  }
+
+  .container-tips {
+    height: 500px;
+  }
+
+  .container-tips .design__item {
+    height: 100%;
+  }
+
+  .container-tips .design__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .footer-column {
+    width: 24%;
+  }
+
+  .banner__title,
+.banner__txt {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .menu {
+    font-size: 1em;
+  }
+
+  .main-title {
+    font-size: 2.5em;
+  }
+
+  .design__item {
+    height: 500px;
+  }
+
+  .container-tips .design__item {
+    height: 100%;
+  }
+
+  .container-design .design__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .footer-column {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
+
+  .design__title {
+    font-size: 2.5em;
+  }
+
+  .design__item {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1400px;
+  }
+
+  .banner__title, .banner__txt {
+    font-size: 2em;
+  }
+}
 /*
 font-family: 'Fraunces', serif;
 font-family: 'Roboto', sans-serif;
