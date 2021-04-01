@@ -85,7 +85,7 @@ body {
 }
 
 .banner {
-  background: url(../../img/img1.jpg);
+  background: url('https://res.cloudinary.com/dggqauzyy/image/upload/v1617244135/ilyljlvkz1pxbrru8v9q.jpg');
   min-height: 400px;
   position: absolute;
   top: 0;
