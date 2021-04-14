@@ -1,4 +1,4 @@
-Page link: https://codigcar.github.io/Room-page/
+Deploy: https://codigcar.github.io/Room-page/
 
 Version Mobile
 
