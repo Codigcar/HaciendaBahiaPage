@@ -7,4 +7,4 @@ Version Mobile
 
 Version Desktop
 
-![image](https://user-images.githubusercontent.com/34387852/114794325-d7996c00-9d51-11eb-9bac-be4d4b91464c.png)
+![image](https://user-images.githubusercontent.com/34387852/114795470-395ad580-9d54-11eb-851c-b49a8b28b6db.png)
